@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Redirect to index.html if accessing the root
+RewriteRule ^$ index.html [L]
+
+# Rewrite rules for clean URLs with .html extension
+RewriteRule ^index\.html$ index.php [L]
+RewriteRule ^login\.html$ login.php [L]
+RewriteRule ^signup\.html$ signup.php [L]
+RewriteRule ^logout\.html$ logout.php [L]
+RewriteRule ^homepage\.html$ homepage.php [L]
